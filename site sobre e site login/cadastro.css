@@ -1,0 +1,179 @@
+/*estilização basica para o corpo da pagina*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+/*estilo para o container que envolve o formulario */
+.container{
+    display:flex;/*Ativa o Flexbox*/
+    justify-content: center;/*Distribui os itens com espaço ao redor*/
+    flex-wrap:wrap;/*Permite que os itens quebrem linha se não couberem*/
+    padding: 50px;
+    margin: 50px;
+    border: 5px solid #04185a;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 200px;/*Define uma largura fixapara cada item */
+    background-color: #a1a0a0;
+    width: 20%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+.marcal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*estilo do menu de navegação*/
+nav{
+    background-color: rgb(0, 255, 213);
+    padding: 5px 0;/*espaçamento interno*/
+}
+
+nav ul{
+    list-style-type: none;/*remove as bolinhas padrão da lista*/
+    margin: 0;
+    padding: 0;
+    display: flex; /* faz com que os itens fiquem lado a 
+    lado (horizontal)*/
+    justify-content: flex-end; /* centraliza os itens horizontalmente*/
+
+}
+
+nav ul li{
+   position: relative; /* necessario para o posicionamento do dropdown*/
+    margin: 0 10px; /* espaçamento entre os itens do menu*/
+}
+
+nav ul li a{
+    color: deeppink;
+    text-decoration: none; /* remove o sublinhado dos links */
+    font-size: 18px; /*tamanho da fonte*/
+    display: block; /* torna o link clicavel em toda area*/
+    transition: color 0.3s; /* transição suave para a mudança
+    de cor */
+}
+
+nav ul li a:hover{
+    color: rgb(255, 0, 195);/* cor do texto ao passar o mouse (hover)*/
+}
+
+/*estilo do dropdown*/
+nav ul li .dropdown-content{
+    display: none/* esconde o submenu inicialmente*/;
+    position: absolute; /* posiciona o submenu em relação ao item pai*/
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+    z-index: 1; /*garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li{
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover{
+    background-color: cyan; /* cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/*exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+
+footer {
+    background-color: #333;/* Define a cor de fundo do rodapé como cinza escuro */
+    color: white; /* Define a cor do texto como branco */
+    padding: 20px 0; /* Adiciona um espaço interno de 40 pixels na parte superior e inferior */
+  
+}
+
+.footer-container {
+    display: flex; /* Transforma os elementos filhos em elementos flexíveis */
+    justify-content: space-around; /* Distribui os elementos filhos com espaço igual entre eles */
+    flex-wrap: wrap; /* Permite que os elementos filhos quebrem para a próxima linha se não houver espaço suficiente */
+    max-width: 1200px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 0 20px; /* Adiciona um espaço interno de 20 pixels nas laterais */
+}
+
+.footer-section {
+    flex:1; /* Define a largura inicial de cada seção como 23% */
+    min-width: 200px;
+    margin: 10px; /* Adiciona um espaço abaixo de cada seção */
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    color: deeppink;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
+
+.footer-section p{
+    margin: 0;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li{
+    margin: 5px 0;
+
+}
+
+.footer-section ul li a{
+    color: aqua;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+   text-decoration: underline;
+}
+
+.social-links{
+    display:flex;
+    gap: 10px;
+}
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #000000;
+}
+
+.social-icon{
+    color: deeppink;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom {
+  
+    margin-top: 250px;
+    padding: 10px 0;
+   background-color: #000000;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

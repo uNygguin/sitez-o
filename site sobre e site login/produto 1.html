@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto 1</title>
+    <link rel="stylesheet" href="produto 1.css">
+    
+</head>
+<body>
+ 
+        <header>
+            <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.png" alt="" width="5%"></a></li>
+                <li><a href="sobre.html">Home</a></li>
+                <li><a href="flexbox.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="#serviços" class="dropbtn">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#design">Design</a></li>
+                        <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html"><button class="btn-login">LOGAR</button></a></li>
+            </ul>
+        </nav>
+        <nav class="navsecundaria">
+            <p></p>
+        </nav>
+        </header>
+        <main>
+    <!--seção do produto-->
+    <section class="produto">
+        <div class="imagens-produto">
+            <img src="midias/produto 1.jpeg"
+                alt="Produto principal" class="imagem-principal" id="imagem-principal">
+            <div class="miniaturas">
+
+
+                <img src="midias/miniatura 1.jpeg"
+                    alt="Miniatura 1" class="miniatura" data-imagem="midias/miniatura 1.jpeg">
+
+
+                <img src="midias/miniatura 2.jpeg"
+                    alt="Miniatura 2" class="miniatura" data-imagem="midias/miniatura 2.jpeg">
+
+
+                <img src="midias/miniatura 3.jpeg"
+                    alt="Miniatura 3" class="miniatura" data-imagem="midias/miniatura 3.jpeg">
+
+
+                <img src="midias/produto 1.jpeg"
+                    alt="Miniatura 4" class="miniatura" data-imagem="midias/produto 1.jpeg">
+            </div>
+        </div>
+
+
+
+        <!--div que contem os detalhes do produto-->
+        <div class="detalhes-produto">
+            <!--nome do produto-->
+            <h2>Ford Monster Car</h2>
+            <!--desccrição do produto-->
+            <p class="descrição">Carro da Ford de alta potência, com o patrocinio da Monster</p>
+            <!--preço do produto-->
+            <p class="preco">R$ 130.000,00</p>
+
+            <!--formulario para selecionar tamanho e cor do produto -->
+          <!--  <form class="opcoes-compra">
+                seleçao de tamanho
+                <label for="tamanho ">Tamanho:</label>
+                <select id="tamanho">
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>GG</option>
+                </select>
+
+                seleção de cor
+                <label for="cor">Cor:</label>
+                <select id="cor">
+                <option>Vermelho</option>
+                <option>Azul</option>
+                <option>Preto</option>
+            </select>-->
+            
+            <!--botao de comprar-->
+            <button type="submit">Comprar</button>
+            </form>
+        </div>
+    </section>
+
+    <!--seçao de comentarios dos clientes-->
+    <section class="comentarios">
+        <h3>comentarios dos clientes</h3> <!--titulo da seçao de comentarios-->
+
+        <!--comentario 1-->
+        <div class="comentario">
+            <!--foto do usuario-->
+            <img src="midias/pessoa4.png" alt="foto de João" class="foto-usuario">
+            <!--nome e depoimento do usuario-->
+            <p><strong>João:</strong> <br>
+                Muito bom, não tenho dinheiro para comprar mas so de ver ele em ação, ja fico feliz</p>
+        </div>
+    </section>
+
+    <footer >
+
+        <a href="#ierene" title="ierene"><img src="midias/favicon.ico" alt="iconetopo" width="10%" ></a>
+        <hr>
+      
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>sobre nos</h2>
+                <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes.</p>
+                </div>
+                <div class="footer-section">
+                    <h2>links rapidos</h2>
+                    <ul>
+                        <li><a href="#home"></a></li>
+                        <li><a href="#sobre"></a></li>
+                        <li><a href="#serviços"></a></li>
+                        <li><a href="#contato"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Contato</h2>
+                    <p>Email: fabgoddamn@yahoo.com</p>
+                    <p>Telefone:(19)9876-5432</p>
+                    <p>Endereço: Rua Onde os Comédia Não Brota, 69, São Paulo, SP</p>
+                <div class="footer-section">
+                    <h2>Siga-nos</h2>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+</main>
+<script src="produto 1.js"></script>
+</body>
+</html>
