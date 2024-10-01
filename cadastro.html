@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="logo.png" alt="" width="5%"></a></li>
+            <li><a href="sobre.html">Home</a></li>
+            <li><a href="flexbox.html">Produtos</a></li>
+            <li class="dropdown">
+                <a href="#serviços" class="dropbtn">Serviços</a>
+                <ul class="dropdown-content">
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                </ul>
+                </nav>
+    <div class="marcal">
+    <div class="container">
+        <h2>Cadastro do Cliente</h2>
+        <form action="/cadastrar_cliente" method="POST">
+            <!--campo para o nome completo do cliente-->
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            <p>
+            <!--campo para o email do cliente-->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <p>
+            <!--campo para o telefone do cliente -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <p>
+            <!-- campo para a data de nascimento do cliente-->
+             <label for="nascimento">Data de Nascimento:</label>
+             <input type="date" id="nascimento" name="nascimento" required>
+             <p>
+             <!--campo para o endereço do cliente-->
+             <label for="endereço">Endereço:</label>
+             <input type="text" id="endereco" name="endereco" required>
+             <p>
+             <!-- botao de envio do formulario -->
+              <button type="submit">Cadastrar</button>
+              <p>
+        </form>
+    </div>
+</div>
+<footer>
+    <a href="#ierene" title="ierene"><img src="midias/favicon.ico" alt="iconetopo" width="10%" ></a>
+    <hr>
+    <p ><strong> Desenvolvido por -Davi Yuri Cerqueira Modesto - 2024</strong></p>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>sobre nos</h4>
+            <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes.</p>
+            </div>
+            <div class="footer-section">
+                <h4>links rapidos</h4>
+                <ul>
+                    <li><a href="#home"></a></li>
+                    <li><a href="#sobre"></a></li>
+                    <li><a href="#serviços"></a></li>
+                    <li><a href="#contato"></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: fabgoddamn@yahoo.com</p>
+                <p>Telefone:(19)9876-5432</p>
+                <p>Endereço: Rua Onde os Comédia Não Brota, 69, São Paulo, SP</p>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
+        </div>
+</footer>
+</body>
+</html>

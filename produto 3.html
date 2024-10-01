@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto 2</title>
+    <link rel="stylesheet" href="produto 3.css">
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.png" alt="" width="5%"></a></li>
+                <li><a href="sobre.html">Home</a></li>
+                <li><a href="flexbox.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="#serviços" class="dropbtn">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#design">Design</a></li>
+                        <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html"><button class="btn-login">LOGAR</button></a></li>
+            </ul>
+        </nav>
+        <nav class="navsecundaria">
+            <p></p>
+        </nav>
+        </header>
+
+    <!--seção do produto-->
+    
+
+<section class="produto">
+    <div class="imagens-produto">
+        <img src="midias/produto 3.jpeg"
+            alt="Produto principal" class="imagem-principal" id="imagem-principal">
+        <div class="miniaturas">
+
+
+            <img src="midias/miniatura 1-produto 3.jpeg"
+                alt="Miniatura 1" class="miniatura" data-imagem="midias/miniatura 1-produto 3.jpeg">
+
+
+            <img src="midias/miniatura 2-produto 3.jpeg"
+                alt="Miniatura 2" class="miniatura" data-imagem="midias/miniatura 1-produto 3.jpeg">
+
+
+            <img src="midias/miniatura 3-produto 3.jpeg"
+                alt="Miniatura 3" class="miniatura" data-imagem="midias/miniatura 3-produto 3.jpeg">
+
+
+            <img src="midias/produto 3.jpeg"
+                alt="Miniatura 4" class="miniatura" data-imagem="midias/produto 3.jpeg">
+        </div>
+    </div>
+
+
+
+        <!--div que contem os detalhes do produto-->
+        <div class="detalhes-produto">
+            <!--nome do produto-->
+            <h2>Toyota Supra</h2>
+            <!--desccrição do produto-->
+            <p class="descrição">Supra com roda preta, aro 20, body kit, farol personalizado, capo personalizado e aerofólio</p>
+            <!--preço do produto--> <br>
+            <p class="preco">R$ 150.000,00</p>
+
+            <!--formulario para selecionar tamanho e cor do produto -->
+          <!--  <form class="opcoes-compra">
+                seleçao de tamanho
+                <label for="tamanho ">Tamanho:</label>
+                <select id="tamanho">
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>GG</option>
+                </select>
+
+                seleção de cor
+                <label for="cor">Cor:</label>
+                <select id="cor">
+                <option>Vermelho</option>
+                <option>Azul</option>
+                <option>Preto</option>
+            </select>-->
+            
+            <!--botao de comprar-->
+            <button type="submit">Comprar</button>
+            </form>
+        </div>
+    </section>
+
+    <!--seçao de comentarios dos clientes-->
+    <section class="comentarios">
+        <h3>comentarios dos clientes</h3> <!--titulo da seçao de comentarios-->
+
+        <!--comentario 1-->
+        <div class="comentario">
+            <!--foto do usuario-->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExIVFRUXGBkaGBgXGBgaFxgaFxcXGBcYGRcYHSggGh0lHRoYIjEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHyUtLS0tLS0tLS0uLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS4tLS0tLS0tLS0tLS0tLf/AABEIAQcAvwMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQYDBAECBwj/xABCEAABAwIDBAcECAQFBQEAAAABAAIRAwQFEiExQVFhBhMicYGRoTKxwdEHI0JSYnLh8BUzgpIUQ6LC8SRjg5OyF//EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EACQRAQEAAgICAgMAAwEAAAAAAAABAhEDMRIhBEETIlFhgaEU/9oADAMBAAIRAxEAPwD3FERAREQEREBERARcEwqL0+6e0bam+mx5NVzTlgS0HZq4HTfGm7mmzSy4n0ktKAcatdjcsyJk6bRA1LuW1V3/APUbGYIrNI2hzBI8ATC+fTXe55e90TO0yNTOzesOrj7Wu4idvdwVfJbT6cw7p1h1YSy6pzpLXGHAkxBBU/bXLKjQ+m9r2nYWkEeYXyI97gNDHE/NWTov0/urE9hwexxBc12rXHfzaY3j1TZp9OIq30L6Y0MQpZqfYqN9umTJHAg6SOcBWRWVEREBERAREQEREBERAREQEREBERB559M+PmhaihTcRVrH7JAhjSM074JIGkb9dIPgL3mXEkkCB46lek/ThVdUvgxv2KLG+LnPd7oVds+iVV4bnIaPnx/e9ZZZSdtsOO5dKp1sjbG/mVyJLSJ13bV6phPQmgG9sBx4qcsuh1q05urBPPX0VPyRt/5r915FY4FWrNzNpnTlt5mf3qtp3Q26awuFMkASRv8AD97l7pQw5jB2WgLK+lyTzyTOLF89dF8TqWd3RrNJGR4JgxmbIzt7iJC+r7es17WvaZa4Ag8iJXz39IfR9tKuKjRDakmNwcPa8DIPmvZfo8uC/DrYuMkMyE/kcWD0AWuGW3NyYeNWNERXZiIiAiIgIiICIiAiIgIiICIiDxTpTb9djzmOEtDqcf00GOHhJKnLu1yPjkonFrplTHA+k8Oa7KCYILXNbkc0hwB+yD4qV6YYlSoVAXujTYNvkufObjs4Lcbqtuy00UpbbVS8M6V2xcB1kcJBHvVysLpjtQVnI6cruekg1cVBooLG+k9O3Ib1dSo47mCfPgtW26VVKhH/AEVcNO0wNOcGJCvbHPMbtFfSWAbccQ4R3Harr9FxnDLf/wAk/wDteqP9ITOstOsE9kgnaCATGoPgrH9EV5ls6VB4hzjUe3X7JdI03bVbjsV58bb6egIiLdyCIiAiIgIiICIiAiIgIiIC4c2QQdhXKIPEDa5cQoU8xNSlUc2oTtMZnNJdOuhA8FJ9JQalQhrW5xpmcBAAEk8zwCmMbwPqcRNztFRzDu0hoY6N5nU8sq1ry3y1iHAkFcnvGa/j0vXJn5T7m/8Af2pzei9aoajnVWmP5UBkHZo4Bun2tQeHDWV6BmqajqVSAWcNngrFVDGMJGgjaozo3/Nc8D2jGzgJhR5bXx4/H7d+kNhULpFQtaduQdqPzFYejmC12sl125zs2gJc5pbJMODidYIEtjZsVs6wAHNs7l3t2NOoLSOUJJ9K5f2oXpHZ5rSszjTd6CfgpzoVb5Q0OYGuZTa3TuaD7vVR+MOmm8DUlpb/AHdn4q0YDbkNLyIzRE7YG/x+CtxzeSnLlrC/5SiIi6nniIiAiIgIiICIiAiIgIiICIiDWv7JtVuV20agjaDxHyVE6Tlwc3iwwfNeiKldNbWHZo7LxqeYj9PNZcs9Oj4+Wsnn2P4qHjqg4zvjcsOBYteB4ZkL2cWgAiN89xWtjeFOLusoVDTqMOo2g8QQf3qpTAnVCYqtqNMGTSqtid2joI/VYTp2/tbu/wDFmt7ipAc5r3A7tw46R75VfbijqV11bZyHXLM5Z7tg4KeuLLMAGOcJjV7szuemzxM9y034VbUHtFNjWmCXH7TnEzLjtJJKWLbqx4KOsrsaQCNp8BI9Qrsql0Jt5c+pw7PidT5CPNW1b8M/VwfJy3mIiLVziIiAiIgIiICIiAiIgIiICIiAo3pDZirQe3eBIPAj9JHipEleY9O+n4p1GUqTob1jWkj7faAI/Kq52SL8ctvpVsRBa/N4OHEbJ7+fJZGWNV+U06jYO87YUjiloOucw7HTlPA/qqqcTfbVC0GR4rm7d+NuK+YPRfTa4vfmI3DcojEbtz6wawySZgcuPAc1DYbe3NUuDBAcTJJ4q14Phwp6ntOO0nlu5BVt0tq5LZ0SuGUW9U50OcZHMx2vgrUF546mTVolvtCo2O46P/0yf6Vd6FfKIOxdHFluOP5GPjm3EXAMrlaucREQEREBERAREQEREBFjrVg0SSom8xRx0YI570EvUqNaJcQBxJgeqirvpJbs+0XH8I+J0UBc0XOMkknnqo9rGNeXvcA2nq7vgxt7p8lW2raiYxrpBUNEltMtzaDjG9x+S8Q6X2bmVGVDJaT5GFdMc6a1utDKdu3JIEukyDs2bFrNLcTZUtXNFGtoWu1c3skEmNCNnqqZS1fDORjp4xno0nz2mgA84C17+hTrPDxEnb81FPs6lrVdQqQS0xI2EESCORBBW9XsCIdrlK5r6ehh7m1ow2mGaCICladWFX8KrTAG1WCkymwh9xUbTpjUNcYLiOI+77+7bGMuV1GnJnjhN1PYHZH+a4an2RwB39593epkqNwrG7evpSrMeRuB1HgpIrtxxmM1Hk553O7ruyqRsWZt0N4Wq06LqHSrKJJlQHYV3UWFlZWI3oN9FipVgeRWVAREQEREBdaj4Erso/EKwzdXOsT6oNO6r5iZWrbnO13Fji33EehC5Y6e9YrN0VqrT9oNcO8S13ub5qBzWbBbzUXj2HNyPdlGYiJjaT2R71LYnoyfxN/+guuLNljRxc301+CCAvcMbl9kaD3Kv4zhVW3ri6piRGsesjhCvF7S1DeP/K2KlAOYWuAIjeE0KZjNi29oZ2gCtTH9zRrHhtHiuMPpt6hubaBrKnaliKT87Ac0NMAaHUZs3guMIwvNWe4gdWx5Debhv7hp49yw5OPeXp2/H5pjhd/TH0awnq3Gq8do+w37oO1x4E+nipTHMGFw0hwAO4/qpmmwALHUfOnFbY4zGajk5M7nluqBT6AvZTNWjVIrA5meGzVXPAcU66iHOGWo3svYdrXjQiOB2jkpIAAQsTmAuBgSNp0nulWUZKhgc9gSmPILBXqTUDOU+cgLMTsaPFEu8oCgKNM6+XzQdwtyhUkcwtIFZKDocOeiDeREQEREBVrG6uWoytua7K7k1/Znw0VguX5Wk8lWr+u0Oyv/AJb+y7hrsKDLctynMNkz81q1nRdUzuc1w88p/wBqzYc8lppPPaYcpPEfZd4j1ladySHUJ2sqlp5hzXQfcoG3jr4YBxfTHnUatm9EuYPH0UbjDpr0GcXgn+kOd8ApG4eM/cg1r09umfxH3FZLvQHXautY+wfxfNc4iOz4j3qUMdc+0YnLu4kwB6x5retKIa0DbG3nO0+JlabaH1ojm53ONG6d5n+kKSlBw506LHQEunh+yulSpo48Fks2wyd5QZi/bwC60eJXTRZQUGlbHNXqH7oA9P1Wyx2pPOB4bStO1bAqO41B7wFlovkvj7JI8SZPwQbJIOiyBYKY8h6lZwUHdAdR3j3rqFy3a3vHvRKSREQEREGK6jKZVYvLcE5HiWu2H4FWDEndmOIKhKVUPBY7Qj9hwQaVm5zHdW/V7RDXffYNx5j97Ss2NU5YHja1zCebWvBJ8BPqu1wJAZVEEexUGzkZ3LNRdmaab9pEHgQdJHeiEPcV82IU2/daD5hylqru2VV2VT/Edd1On59sH1BViLu2dVAyv1A7wu16JaO9G6rvUbLVI70mQ4ujaAPKfmsoq68IBWOgOysWIOhnMoOHataPvGfDb+i3XGAAo6yM1CY0aIHvPw8ltl2pKDIF2doCeS6BLj2TBQYrZkUT5+srXsD9XO97nO8HEu90LYuTloOjQxA7yYHqtWidjBvlv9LfbPnA8kG/TOk7t3zWVg4rFMnkNFmaEHYu8UoznaTx8AuwC5p+0BvPw1RKRREQERY69TKJQaF/Uk9yjKjQSDwO33rZr1Qd8LGIRDtSMiHa96x9QG/l2RwngsjWei7u10KCl4oMt5m0ksaf7XOn1cpahcSSqz0qxOm2+aydQ0Ak6CKnA78rmtnhnCkLW7Hqo2nXpZ6LlsUz4rTptOUGd62aJmdxUoZ7fYeC08XfDQty33qMx92gQc4aYp5uJW4wrRAim1bFu7n/AMIN0Lh+ohY2OXYFBhxZ2WjPBzPR7So9laHQdoDWd2ge8+Jc0eC2MfP1TWj7VRg8MwJ9Aq9hL3VLh5cOyHVNZ/7hy+gHko2nW1ut3byNd3JbjVC0b1olziAAdST6LYZizT7LXO56NH+oz6KLlJ3VphleolFxRaA4HfO1RrsYDfapP/pyn4z6LNY4rRrT1dQOcyMzdQ9s7MzTBHkkyl6plhlj3E+iBFZUWhjNk2qwB0w0gwDAdG53ETB8FvrBe+wf3vUVM7ecY9Z0S/8Als8hK1bFpb7LnN/K5wHlMLJjdX6w96w2tRefnlZk9bjwlx9p+1vao2vDh+Ia/wBzY+KkP4mPtjJz2t89o8lCUXrm6uIaTwC1x5coxz+PjlekN0tbRvLjqDE0mDtt2zUAO0fhDT4qOum1LXK2q7M06Nq+UB/A89h5Ljo5VGSdmYl3nqrO6iyszI8BzSIKn8lt2i8MmOkvhNQVKAcOHLxXajVIeOYPftUb0LtHW/WWziXNac1N28sfuPMEOHktqt2au+Ne5dMu5tw5Y6ukxaE66qLxt0uaOakbAiFE4iZrtG79Qpqrbu2jqhuiFxanszqu2JEdWuLUfVygyNetvNotBjpI138FsVqsbdgCCJ6T3sZGt1dJd3aFv+70VdpVXsbBOriTHdAEnl8Vti/bWc6rt3NG8j7Kx1wAdT2nDWPs8AAufPLdejwccxntw1hfVBzlwgSNzTyjkrFasgKDwS0LWjMZO/v3qwMEBc893bfP1NR1uFWsZr9S4XTR9ZR1nZmZ/mUzxBHqAdynLuuBvWlg9ky7r9U8ZqeUl43EbIJ5kj1UzdymlMtTC7ejUHy1p4gHzCyLgCNAuV6Dyha997BWwte/9gqKmdvLsdH1h71isgtnGSC4nmtO1qAb153JPb1+K/q37jMBmbqRtHEcuB96i8bxACg507WwP6tB71LUq3NR2M4G2uwta4sJM7JBMzqO/goi+0HhdyyNNIVisKum3wVKurSrbvDKo2+y4ey7uPHltU3Z3DoGqv0rfa5W95lOYHUD0O3b3Lrc3mYh2gKhBc8UdU5qZyZTpnlxYZdxbMMxGmGw5xHn8FqmqHXIJPZDIndt5qvULgjeVt9forznv3GV+Jj9VYcTrDLo4eEfNdaV1TDNXCeA1UEKi56xTfkX+Kz4k+6lWXzQ7NqR3ALBfXRqtc0dkOkTv14eC1Z0XR7nN2Kl5s60x+PxxzZ4cGGWndEGI/fyXLbDtS4lxJlYW4mAYOnetyjetO9U3tv03qNMBd6lRYP8QCseYnVOkdtG/f8AorN0BsctJ1U7ahgflbPxnyCqlywve2m32nuAHiV6fZ24psbTbsaAB4Ba/Hx3fJz/AC89YzFmREXY88WnipimStxa2JU81J4G3KY7xqFF6TO3kWPVHNeR+9dVE073mpLEHBz5nU7e8aKLr2wJ4Lgy7etjPXpIW2IjZKk6GJN+8ql/DfxLPb2RH/KrqLS37W6t1VZuR4Dmncf3oeYVYvrE2pLxL6W3NMuZycBtH4vONp3rany9St5lFrtCHQdCM7vmq7Lir1PE6bhIeD3H4rluIDiuMT6B27pfbudRfyJIPeCq1cNq27slw3LwePYd8itZJemVys7WluIjithmIjcVVGmdhkLlxeOKeKfNdWXnNd6d4eKo9PEXDetuli3NVuNWmcXL/GkLapXqqDMU5rZoYiDvVfa3qrZLH6EArEMJbta4jxURSveakbO/IOpEcEidaS1jaxo4yubioANFpvxJgENOpWjfX0N2gk7Fa/wk+1h6D2nWV3ViNKYgfmdI90+YV9UL0QsOptWAiHOGd3e7YD3CB4KaXbxY+OMjyufPzztERFoyEREHhfTy3dQuqjBoJzN7js+Xgq+MS07XmvoDG+j1tdgC4pB+XYZc1w5ZmkGOSjXdAMNy5f8ACtjjmqZv7s0rC8Xt14/Jknt4j/ExxRuNkL0jF/ohouk29dzD92oA9vdIgjxlec430XuLVzg9ocGuy5mHM2YBjcd+8BZXis7jXHmmXVbFLGmneQtyjjA+8qo2N7ZW1QbQO3M3uJVLjGszq30cbHFdby+p1RkeA4HioCjY0D/mP8x8luU7Sluc496rpfvtWsTw51F2ai45fu7QF1tcX3OEeoVnrWFMj2lXsSwkAy0rTG77Y5Y3H3Gz1lN4kgd4WN9vT3EjxUKKbmnQkLbp1XEaj4K3ir5f1I0m09hnzXapRI1Y4+KjXVG73fFYTe8C79+KjxqfOJZuJVG7SVmZjLjooq2Gc6yApLDbBrnAROvH5KZgreXSw4ZXETtVk6L4SLm4bm1Y0y7gYE5PHfy8Fq2XQ+iQ05qreIDuyfMEjwKvnRy0ZTLWsaGtAOnhxO081fHh97qvJ8qeOse1lREXQ4hERAREQEREBeP9OLkkMH3i+oeEucY28gvYF4z9IFvFyabZIaGAeQ+ai9LY9oJ9k3/CVKhaC6WQY1E5p18lHYVhgrB0kthrnaD7oJ+CubLDNb1Kcfc8dq1uimHAVQ08Hg+LSq3GVeclii0JIJAOnOVl654MQ+e4fNekVOjdJlXsgAHUjipG2winsLRy0+Kj8UT+fJ5M99cx9W8zprouXWN2dOry9/7C9ZqWjWiCBp81xd2bdNNx3fJPxxF5sq8fGEVyTmJEDWNFFOsXkyQeXcvaxhjSxxj2tPBRFfAG7MoMpcUef9eWuoEbl3ZbHgrzddH+XfotB2CkaKNLeSFoiBAVq6LWHaBK0rfDAHK7YHZAAJIZZLBZtgBS+Et+s8CfgottQNGqlcCkvJ4N95Ee5aMU2iIpBERAREQEREBeYfSFbEVnv/KR5D5LlEpHewID3t/Cz4rSwlwF2RGzN6tKIoE/io7LXjjHnsXWk72TsRFKHe9G31JWK8d9WDxgeM6oiDJAAAhYqtIIihLTu2BR1W0Lu5cIoTCjhYGpMarctq59mmPE/qiKEt6lQI1dqe9W/o+36qfvEny0+CIrRFSaIilAiIg//9k=" alt="foto de João" class="foto-usuario">
+            <!--nome e depoimento do usuario-->
+            <p><strong>Fabricio:</strong> <br>
+                Show, até compraria mas os impostos tão dexando a compra muito cara</p>
+        </div>
+    </section>
+
+    <footer >
+
+        <a href="#ierene" title="ierene"><img src="midias/favicon.ico" alt="iconetopo" width="10%" ></a>
+        <hr>
+      
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>sobre nos</h2>
+                <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes.</p>
+                </div>
+                <div class="footer-section">
+                    <h2>links rapidos</h2>
+                    <ul>
+                        <li><a href="#home"></a></li>
+                        <li><a href="#sobre"></a></li>
+                        <li><a href="#serviços"></a></li>
+                        <li><a href="#contato"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Contato</h2>
+                    <p>Email: fabgoddamn@yahoo.com</p>
+                    <p>Telefone:(19)9876-5432</p>
+                    <p>Endereço: Rua Onde os Comédia Não Brota, 69, São Paulo, SP</p>
+                <div class="footer-section">
+                    <h2>Siga-nos</h2>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+    </main>
+    <script src="produto 1.js"></script>
+</body>
+</html>
